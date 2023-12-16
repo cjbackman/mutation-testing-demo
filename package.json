@@ -1,0 +1,21 @@
+{
+  "name": "demo-mutation-tests",
+  "version": "1.0.0",
+  "description": "A demo of mutation tests in Typescript.",
+  "main": "src/calculator.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:mutation": "npx stryker run"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^6.4.2",
+    "@stryker-mutator/jest-runner": "^6.4.2",
+    "@stryker-mutator/typescript-checker": "^6.4.2",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^20.2.5",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
