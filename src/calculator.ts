@@ -1,20 +1,13 @@
 export class Calculator {
-    add(x: number, y: number): number {
-        return x + y;
+    add(a: number, b: number): number {
+        return a + b;
     }
 
-    subtract(x: number, y: number): number {
-        return x - y;
+    multiply(a: number, b: number): number {
+        return a * b;
     }
 
-    multiply(x: number, y: number): number {
-        return x * y;
-    }
-
-    divide(x: number, y: number): number {
-        if(y == 0) {
-            throw new Error("Cannot divide by zero");
-        }
-        return x / y;
+    isPositive(number: number): boolean {
+        return number >= 0;
     }
 }

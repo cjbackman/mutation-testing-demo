@@ -7,23 +7,19 @@ describe('Calculator', () => {
         calculator = new Calculator();
     });
 
-    it('should correctly add two numbers', () => {
-        expect(calculator.add(5, 5)).toEqual(10);
+    test('add should return the sum of two numbers', () => {
+        expect(calculator.add(5, 2)).toBe(7);
     });
 
-    it('should correctly subtract two numbers', () => {
-        expect(calculator.subtract(10, 5)).toEqual(5);
+    test('multiply should return the product of two numbers', () => {
+        expect(calculator.multiply(3, 4)).toBe(12);
     });
 
-    it('should correctly multiply two numbers', () => {
-        expect(calculator.multiply(5, 5)).toEqual(25);
+    test('isPositive should return true if the number is positive', () => {
+        expect(calculator.isPositive(5)).toBe(true);
     });
 
-    it('should correctly divide two numbers', () => {
-        expect(calculator.divide(10, 5)).toEqual(2);
-    });
-
-    it('should throw error when divide by zero', () => {
-        expect(() => calculator.divide(10, 0)).toThrowError('Cannot divide by zero');
+    test('isPositive should return false if the number is negative', () => {
+        expect(calculator.isPositive(-3)).toBe(false);
     });
 });
