@@ -22,4 +22,11 @@ describe('Calculator', () => {
     test('isPositive should return false if the number is negative', () => {
         expect(calculator.isPositive(-3)).toBe(false);
     });
+
+    // Missing test
+    /*
+    test("isPositive should return false if the number is zero", () => {
+        expect(calculator.isPositive(0)).toBe(false);
+    });
+    */
 });
